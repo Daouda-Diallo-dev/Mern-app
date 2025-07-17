@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: mern-todo-backend
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: MONGODB_URI
+        value: ton_lien_mongodb_atlas
+      - key: NODE_ENV
+        value: production
